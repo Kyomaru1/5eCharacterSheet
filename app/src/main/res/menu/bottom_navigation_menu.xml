@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_status"
+        android:title="Status"
+        android:icon="@drawable/ic_action_stats"
+        android:enabled="true"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_bio"
+        android:title="Bio"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_bio"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_feats"
+        android:title="Feats"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_feats"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_inventory"
+        android:title="Inventory"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_inventory"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_spells"
+        android:title="Spells"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_spells"
+        app:showAsAction="always" />
+</menu>
