@@ -545,7 +545,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cardView5"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -559,20 +559,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Saving Throws"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
@@ -580,11 +566,11 @@
         android:id="@+id/cardView6"
         android:layout_width="0dp"
         android:layout_height="120dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/cardView5"
         app:layout_constraintRight_toRightOf="@+id/cardView4">
 
@@ -592,12 +578,152 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Saving Throws"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Constitution"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Charisma"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
+                app:layout_constraintLeft_toRightOf="@+id/textView20"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Intelligence"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+                app:layout_constraintLeft_toRightOf="@+id/textView18"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Dextarity"
+                app:layout_constraintRight_toRightOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wisdom"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+                android:layout_marginRight="0dp"
+                app:layout_constraintRight_toRightOf="@+id/textView21"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="15dp"
+                android:text="Strength"
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintLeft_toLeftOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="@+id/textView17"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+                tools:text="+1"
+                app:layout_constraintLeft_toRightOf="@+id/textView15"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                tools:text="+1"
+                app:layout_constraintLeft_toRightOf="@+id/textView21"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+                android:layout_marginStart="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="+1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/textView22"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+                app:layout_constraintLeft_toRightOf="@+id/textView16"
+                tools:text="+1"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
+                tools:text="+1"
+                app:layout_constraintLeft_toRightOf="@+id/textView17"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="+1"
+                tools:layout_editor_absoluteY="86dp"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintLeft_toLeftOf="@+id/textView19" />
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -605,8 +731,7 @@
         app:layout_constraintLeft_toRightOf="@+id/cardView5"
         app:layout_constraintRight_toRightOf="@+id/cardView6"
         app:layout_constraintTop_toBottomOf="@+id/cardView4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.5"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.5" />
 
 </android.support.constraint.ConstraintLayout>
