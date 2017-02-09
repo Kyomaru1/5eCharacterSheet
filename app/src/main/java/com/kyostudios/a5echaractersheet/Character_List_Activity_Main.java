@@ -20,6 +20,8 @@ public class Character_List_Activity_Main extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.appBarLayout);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setTitle("Character Name");
+
         BottomNavigationView bnv = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
